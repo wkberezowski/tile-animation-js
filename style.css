@@ -62,3 +62,12 @@ a {
   max-height: 100%;
   max-width: 70%;
 }
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  background: rgb(52, 140, 199);
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
