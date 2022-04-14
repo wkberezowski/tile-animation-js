@@ -11,7 +11,7 @@ let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: '.home',
     start: '0%',
-    end: '80%',
+    end: '60%',
     scrub: 1,
   },
 });
@@ -32,7 +32,11 @@ tl2.fromTo(
   { scale: 1, top: '2rem', left: '3rem', x: '50%', y: '50%' }
 );
 
-tl4.fromTo('.square', { left: '70%' }, { left: '100%' });
+tl4.fromTo(
+  '.square',
+  { left: '70%' },
+  { left: '100%', opacity: 0, rotation: 90 }
+);
 
 let tl3 = gsap.timeline({
   scrollTrigger: {
